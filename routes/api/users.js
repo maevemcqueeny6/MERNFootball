@@ -13,10 +13,8 @@ router.get('/users', (req, res) => {
 
 // Get user team
 router.get('/users/:user', (req, res) => {
-    // User.users.findOne({
-
-    // })
-    // .then(user => res.json(user.teams));
+    User.findOne({ })
+    .then(user => res.json(user.teams));
 })
 
 // POST api/users
