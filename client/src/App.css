@@ -50,3 +50,28 @@ li.game{
   li.game-bottom{ 
     border-top:1px solid #aaa;
   }
+
+  
+  /* App css  */
+
+  .remove-btn {
+    margin-right: 0.5rem;
+  }
+  
+  .fade-enter {
+    opacity: 0.01;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 1000ms ease-in;
+  }

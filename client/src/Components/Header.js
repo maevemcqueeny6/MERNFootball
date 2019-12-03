@@ -1,19 +1,28 @@
-import React from 'react'
+import React, {Component} from 'react';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    Container
+} from 'reactstrap';
 
-function Header() {
+class Header extends Component {
+    render(){
     return (
-        <header style={headerStyle}>
-            Sports
-        </header>
+                <Navbar color="dark" dark expand="sm" className="mb5" style={{marginBottom: '2rem'}}>
+            <Container>
+            <NavbarBrand>Sports</NavbarBrand>
+            </Container>
+        </Navbar>
+       
     )
 }
-
-const headerStyle = {
-    background: '#333',
-    color: '#fff',
-    textAlign: 'center',
-    padding: '10px'
 }
+
 
 
 export default Header;
