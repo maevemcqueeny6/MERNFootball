@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var TeamSchema = new Schema({
-    team: string
+    teams: Array
 })
 
 var Team = mongoose.model("Team", TeamSchema);
